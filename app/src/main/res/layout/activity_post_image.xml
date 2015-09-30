@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.mohak.aapkasujav.AppIntro.PostImage">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbar"
+        >
+    </include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame">
+
+    <ImageView
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.40"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Button"
+            android:id="@+id/button4"
+            android:layout_gravity="right|top" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/frame"
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:layout_below="@+id/imageView2"
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:paddingLeft="15dp"
+        android:hint="Enter"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/linear"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/button2"
+        android:layout_marginTop="51dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="51dp"
+                android:layout_marginLeft="180dp"
+                android:text="Gallery"
+                android:id="@+id/button3"
+                android:layout_below="@+id/linear"
+                />
+
+        </LinearLayout>
+
+</RelativeLayout>

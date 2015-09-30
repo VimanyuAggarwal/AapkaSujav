@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context="com.example.mohak.aapkasujav.AppIntro.City.CleanCity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/appbar">
+</include>
+
+
+    <it.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/materialTabHost"
+        android:layout_below="@id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:accentColor="@color/accentColor"
+        app:hasIcons="false"
+        app:iconColor="#FFFFFF"
+        app:primaryColor="@color/primaryColor" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/materialTabHost">
+
+</android.support.v4.view.ViewPager>
+
+</RelativeLayout>
+
